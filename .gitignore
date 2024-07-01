@@ -9,7 +9,6 @@ build/
 out/
 
 # IDE/Editor specific
-.vscode/
 .idea/
 *.sublime-project
 *.sublime-workspace
