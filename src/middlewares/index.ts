@@ -2,7 +2,7 @@ import type { Express, Request, Response } from 'express';
 import cors from 'cors';
 import { json, urlencoded } from 'express';
 import { sendApiFailedResponse } from '@helpers/apiHelpers';
-import { ResponseCodeEnum, ResponseStatusEnum } from '@zaions/tool-kit';
+import { ResponseCodeEnum, ResponseStatusEnum } from 'zaions-tool-kit';
 
 export const applyMiddlewaresOnApp = (
 	expressApp: Express,

@@ -3,7 +3,7 @@ import {
 	ResponseCodeEnum,
 	ResponseStatusEnum,
 	ztkMessages,
-} from '@zaions/tool-kit';
+} from 'zaions-tool-kit';
 
 export const sendApiResponse = (
 	res: Response,
