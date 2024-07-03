@@ -14,6 +14,8 @@ export default defineConfig({
 		alias: {
 			'@helpers': path.resolve(__dirname, './src/utils/helpers'),
 			'@enums': path.resolve(__dirname, './src/enums'),
+			'@zTypes': path.resolve(__dirname, './src/types'),
+			'@src': path.resolve(__dirname, './src'),
 		},
 	},
 	define: {

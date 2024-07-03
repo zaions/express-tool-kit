@@ -1,7 +1,7 @@
 import type { Request, Response } from 'express';
 import { Result, matchedData, validationResult } from 'express-validator';
 import type { Location, ValidationError } from 'express-validator';
-import { sendApiFailedResponse } from './apiHelpers';
+import { sendApiFailedResponse } from '../apiHelpers';
 
 export const getFormattedErrors = (result: Result<ValidationError>) => {
 	return result
