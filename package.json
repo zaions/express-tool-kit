@@ -12,7 +12,8 @@
 		"dev": "npm run update:linked-packages && tsup --watch",
 		"build": "npm run update:linked-packages && tsup",
 		"test": "npm run update:linked-packages && vitest",
-		"update:linked-packages": "yarn && yarn link zaions-tool-kit && tsup"
+		"update:linked-packages": "yarn && yarn link zaions-tool-kit && tsup",
+		"push:code": "git add . && git commit -m 'logic updated, taking code backup' && git push -u o main"
 	},
 	"repository": {
 		"type": "git",
