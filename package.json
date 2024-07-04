@@ -9,9 +9,10 @@
 		"dist"
 	],
 	"scripts": {
-		"dev": "tsup --watch",
-		"build": "tsup",
-		"test": "vitest"
+		"dev": "npm run update:linked-packages && tsup --watch",
+		"build": "npm run update:linked-packages && tsup",
+		"test": "npm run update:linked-packages && vitest",
+		"update:linked-packages": "yarn && yarn link zaions-tool-kit && tsup"
 	},
 	"repository": {
 		"type": "git",
