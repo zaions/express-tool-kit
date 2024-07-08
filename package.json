@@ -1,6 +1,6 @@
 {
 	"name": "zaions-express-tool-kit",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"description": "Zaions Express Tool Kit, this is for expressJs/Typescript projects created by Zaions Dev Team (https://zaions.com), We hope you will love this and all other packages we have developed for you, please do react out if you face any issue in packages we deliver. Once again have fun while working with these packages and let us know your feedback, it keeps us motivated. Have a great day :)",
 	"main": "./dist/index.js",
 	"module": "./dist/index.mjs",
@@ -50,10 +50,9 @@
 	},
 	"homepage": "https://github.com/zaions/express-tool-kit#readme",
 	"engines": {
-		"node": ">=22.2.0",
+		"node": ">=20.14.0",
 		"npm": ">=10.7.0",
-		"yarn": ">=1.22.22",
-		"pnpm": ">=9.0.6"
+		"yarn": ">=1.22.22"
 	},
 	"packageManager": "yarn@1.22.22",
 	"peerDependencies": {
@@ -75,6 +74,7 @@
 		"ts-node": "^10.9.2",
 		"tsup": "^8.1.0",
 		"typescript": "^5.5.3",
+		"zaions-tool-kit": "*",
 		"vitest": "^2.0.1",
 		"zod": "^3.23.8"
 	},

@@ -2004,6 +2004,11 @@ yn@3.1.1:
   resolved "https://registry.yarnpkg.com/yn/-/yn-3.1.1.tgz#1e87401a09d767c1d5eab26a6e4c185182d2eb50"
   integrity sha512-Ux4ygGWsu2c7isFWe8Yu1YluJmqVhxqK2cLXNQA5AcC3QfbGNpM7fu0Y8b/z16pXLnFxZYvWhd3fhBY9DLmC6Q==
 
+zaions-tool-kit@*:
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/zaions-tool-kit/-/zaions-tool-kit-0.0.3.tgz#3540105e16d7ab344d5ef7f26f956ff9e03ecd6f"
+  integrity sha512-nxWxqgJ42lQba+2DFgfK0x/409mC1eV9zvRfz121EWFMWPJqFjEPMbG4jmOSspce9ZRUl99LusMmCamrV1TdUQ==
+
 zod@^3.23.8:
   version "3.23.8"
   resolved "https://registry.yarnpkg.com/zod/-/zod-3.23.8.tgz#e37b957b5d52079769fb8097099b592f0ef4067d"
