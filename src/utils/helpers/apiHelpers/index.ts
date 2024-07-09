@@ -31,9 +31,11 @@ export const sendApiResponse = (
 	return res.json({
 		success,
 		message,
-		data,
-		dataList,
-		authToken,
+		result: {
+			data,
+			dataList,
+			authToken,
+		},
 		errors,
 		code,
 		status,
