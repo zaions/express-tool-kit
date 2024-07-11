@@ -11,7 +11,7 @@ const _rateLimiterOptions = getExpressRateLimiterOptions();
 
 const limiter = rateLimit({
 	windowMs: _rateLimiterOptions?.windowMs ?? 15 * 60 * 1000, // 15 minutes
-	limit: _rateLimiterOptions?.limit ?? 10, // Limit each IP to 100 requests per `window` (here, per 15 minutes).
+	limit: _rateLimiterOptions?.limit ?? 100, // Limit each IP to 100 requests per `window` (here, per 15 minutes).
 	standardHeaders: _rateLimiterOptions?.standardHeaders ?? 'draft-7', // draft-6: `RateLimit-*` headers; draft-7: combined `RateLimit` header
 	legacyHeaders: _rateLimiterOptions?.legacyHeaders ?? false, // Disable the `X-RateLimit-*` headers.
 	// store: ... , // Redis, Memcached, etc. See below.

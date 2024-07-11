@@ -28,7 +28,7 @@ export const sendApiResponse = (
 		code = ResponseCodeEnum.success,
 		status = ResponseStatusEnum.success,
 	} = options || {};
-	return res.json({
+	return res.status(status).json({
 		success,
 		message,
 		result: {
