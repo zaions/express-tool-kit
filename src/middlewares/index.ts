@@ -36,7 +36,7 @@ export const applyMiddlewaresOnApp = (
 	}
 
 	if (applyCors) {
-		expressApp.use(cors({ origin: true }));
+		expressApp.use(cors());
 	}
 
 	if (expressUrlEncoded) {
