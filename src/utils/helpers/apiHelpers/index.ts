@@ -17,7 +17,7 @@ export const sendApiResponse = (
 		code?: ResponseCodeEnum;
 		status?: ResponseStatusEnum;
 	}
-) => {
+): Response => {
 	const {
 		success = true,
 		message = ztkMessages.general.success,
@@ -52,7 +52,7 @@ export const sendApiSuccessResponse = (
 		code?: ResponseCodeEnum;
 		status?: ResponseStatusEnum;
 	}
-) => {
+): Response => {
 	const {
 		message = ztkMessages.general.success,
 		data = null,
@@ -82,7 +82,7 @@ export const sendApiFailedResponse = (
 		code?: ResponseCodeEnum;
 		status?: ResponseStatusEnum;
 	}
-) => {
+): Response => {
 	const {
 		message = ztkMessages.general.failed,
 		errors = null,
@@ -108,7 +108,7 @@ export const sendBadRequestResponse = (
 		code?: ResponseCodeEnum;
 		status?: ResponseStatusEnum;
 	}
-) => {
+): Response => {
 	const {
 		message = ztkMessages.general.badRequest,
 		errors = null,
@@ -134,7 +134,7 @@ export const sendUnAuthenticatedErrorResponse = (
 		code?: ResponseCodeEnum;
 		status?: ResponseStatusEnum;
 	}
-) => {
+): Response => {
 	const {
 		message = ztkMessages.general.unAuthenticated,
 		errors = null,
@@ -160,7 +160,7 @@ export const sendUnAuthorizedErrorResponse = (
 		code?: ResponseCodeEnum;
 		status?: ResponseStatusEnum;
 	}
-) => {
+): Response => {
 	const {
 		message = ztkMessages.general.unAuthorized,
 		errors = null,
@@ -186,7 +186,7 @@ export const sendNotFoundErrorResponse = (
 		code?: ResponseCodeEnum;
 		status?: ResponseStatusEnum;
 	}
-) => {
+): Response => {
 	const {
 		message = ztkMessages.general.notFound,
 		errors = null,
@@ -212,7 +212,7 @@ export const sendTooManyRequestsErrorResponse = (
 		code?: ResponseCodeEnum;
 		status?: ResponseStatusEnum;
 	}
-) => {
+): Response => {
 	const {
 		message = ztkMessages.general.tooManyRequests,
 		errors = null,
@@ -238,7 +238,7 @@ export const sendItemExistsErrorResponse = (
 		code?: ResponseCodeEnum;
 		status?: ResponseStatusEnum;
 	}
-) => {
+): Response => {
 	const {
 		message = ztkMessages.general.itemExists,
 		errors = null,
