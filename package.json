@@ -1,6 +1,6 @@
 {
 	"name": "zaions-express-tool-kit",
-	"version": "0.0.9",
+	"version": "0.0.11",
 	"description": "Zaions Express Tool Kit, this is for expressJs/Typescript projects created by Zaions Dev Team (https://zaions.com), We hope you will love this and all other packages we have developed for you, please do react out if you face any issue in packages we deliver. Once again have fun while working with these packages and let us know your feedback, it keeps us motivated. Have a great day :)",
 	"main": "./dist/index.js",
 	"module": "./dist/index.mjs",
@@ -12,8 +12,9 @@
 		"dev": "npm run update:linked-packages && tsup --watch",
 		"build": "npm run update:linked-packages && tsup",
 		"test": "npm run update:linked-packages && vitest",
-		"update:linked-packages": "yarn && yarn link zaions-tool-kit && tsup",
-		"push:code": "git add . && git commit -m 'logic updated, taking code backup' && git push -u o main"
+		"update:linked-packages": "yarn install --force && yarn link zaions-tool-kit && tsup",
+		"push:code": "git add . && git commit -m 'logic updated, taking code backup' && git push -u o main",
+		"deploy": "npm run build && npm publish"
 	},
 	"repository": {
 		"type": "git",
@@ -73,7 +74,7 @@
 		"ts-node": "^10.9.2",
 		"tsup": "^8.2.4",
 		"typescript": "^5.5.4",
-		"zaions-tool-kit": "^0.0.6",
+		"zaions-tool-kit": "*",
 		"vitest": "^2.0.5",
 		"zod": "^3.23.8"
 	},

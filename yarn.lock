@@ -2236,10 +2236,10 @@ yn@3.1.1:
   resolved "https://registry.yarnpkg.com/yn/-/yn-3.1.1.tgz#1e87401a09d767c1d5eab26a6e4c185182d2eb50"
   integrity sha512-Ux4ygGWsu2c7isFWe8Yu1YluJmqVhxqK2cLXNQA5AcC3QfbGNpM7fu0Y8b/z16pXLnFxZYvWhd3fhBY9DLmC6Q==
 
-zaions-tool-kit@^0.0.6:
-  version "0.0.6"
-  resolved "https://registry.yarnpkg.com/zaions-tool-kit/-/zaions-tool-kit-0.0.6.tgz#c10149f962da2171d593a3ae82630f6d64f388ee"
-  integrity sha512-Ch+jtyJ1mXqqZSQYkRD5jmUC78NSBKGZ+6k8qlesy2dNGUjMznyH4eo+B70k03N8i1jc+p0kNuIMoeOLmvCodA==
+zaions-tool-kit@*:
+  version "0.0.7"
+  resolved "https://registry.yarnpkg.com/zaions-tool-kit/-/zaions-tool-kit-0.0.7.tgz#ad88ca2180f521914389f3bfa25bdaa7fc4c9518"
+  integrity sha512-Ec5XGOaSiv+I1Gq+IIecVte8N2CoI3U8pKV7kCwqHOT1QzT6DLZEh3OdAVTLkJJIiOf+pRpomoirGVaxmSLZPA==
 
 zod@^3.23.8:
   version "3.23.8"
