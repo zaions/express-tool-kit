@@ -9,7 +9,7 @@ export interface IConfigureZETKOptions {
 
 export interface IApiResponse extends Response<any, Record<string, any>> {}
 
-export interface IAuthCheckResult<A, B> {
+export interface IAuthCheckResultGeneric<A, B> {
 	user: A;
 	userRecord: B;
 	isAdmin: boolean;
