@@ -15,6 +15,18 @@ const limiter = rateLimit({
 	standardHeaders: _rateLimiterOptions?.standardHeaders ?? 'draft-7', // draft-6: `RateLimit-*` headers; draft-7: combined `RateLimit` header
 	legacyHeaders: _rateLimiterOptions?.legacyHeaders ?? false, // Disable the `X-RateLimit-*` headers.
 	// store: ... , // Redis, Memcached, etc. See below.
+	keyGenerator: (req) => {
+		// Use the IP from the 'X-Forwarded-For' header or the remote address if not available
+		const ip = req.headers
+			? req.headers['x-forwarded-for']
+			: req.socket.remoteAddress;
+		return ip ? ip.toString() : '';
+	},
+	handler: (_, res /*next*/) => {
+		return res.status(429).json({
+			error: 'Too many requests, please try again later.',
+		});
+	},
 });
 
 export const applyMiddlewaresOnApp = (

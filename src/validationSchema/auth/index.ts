@@ -1,6 +1,3 @@
-// Auth Forms Validation Schema
-// Login, & Register Page
-
 import { z as ZOD } from 'zod';
 
 export const registerRequestValidationSchema = ZOD.object({
@@ -22,12 +19,3 @@ export const loginRequestValidationSchema = ZOD.object({
 	email: ZOD.string().email().max(255),
 	password: ZOD.string().min(6).max(30),
 });
-
-// how to validate
-// try {
-// 	validateLoginRequest.parse({});
-// } catch (error) {
-// 	if (error instanceof ZodError) {
-// 		return error.formErrors.fieldErrors;
-// 	}
-// }
