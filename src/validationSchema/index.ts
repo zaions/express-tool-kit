@@ -1,1 +1,4 @@
-export * from './auth';
+export {
+	loginRequestValidationSchema,
+	registerRequestValidationSchema,
+} from './auth';

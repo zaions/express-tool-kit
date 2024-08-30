@@ -1,6 +1,6 @@
 {
 	"name": "zaions-express-tool-kit",
-	"version": "0.0.15",
+	"version": "0.0.16",
 	"description": "Zaions Express Tool Kit, this is for expressJs/Typescript projects created by Zaions Dev Team (https://zaions.com), We hope you will love this and all other packages we have developed for you, please do react out if you face any issue in packages we deliver. Once again have fun while working with these packages and let us know your feedback, it keeps us motivated. Have a great day :)",
 	"main": "./dist/index.js",
 	"module": "./dist/index.mjs",
@@ -73,7 +73,7 @@
 		"tsup": "^8.2.4",
 		"typescript": "^5.5.4",
 		"vitest": "^2.0.5",
-		"zaions-tool-kit": "0.0.13",
+		"zaions-tool-kit": "0.0.15",
 		"zod": "^3.23.8"
 	},
 	"contributors": [
