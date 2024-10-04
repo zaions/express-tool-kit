@@ -28,18 +28,7 @@ export const sendApiResponse = (
 		code = ResponseCodeEnum.success,
 		status = ResponseStatusEnum.success,
 	} = options || {};
-	return res.status(status).json({
-		success,
-		message,
-		result: {
-			data,
-			dataList,
-			authToken,
-		},
-		errors,
-		code,
-		status,
-	});
+	return   
 };
 
 export const sendApiSuccessResponse = (
