@@ -1,94 +1,96 @@
 {
-	"name": "zaions-express-tool-kit",
-	"version": "0.0.22",
-	"description": "Zaions Express Tool Kit, this is for expressJs/Typescript projects created by Zaions Dev Team (https://zaions.com), We hope you will love this and all other packages we have developed for you, please do react out if you face any issue in packages we deliver. Once again have fun while working with these packages and let us know your feedback, it keeps us motivated. Have a great day :)",
-	"main": "./dist/index.js",
-	"module": "./dist/index.mjs",
-	"types": "./dist/index.d.ts",
-	"files": [
-		"dist"
-	],
-	"scripts": {
-		"dev": "npm run update:linked-packages && tsup --watch",
-		"build": "npm run update:linked-packages && tsup",
-		"test": "npm run update:linked-packages && vitest",
-		"update:linked-packages": "yarn install --force && yarn link zaions-tool-kit && tsup",
-		"push:code": "git add . && git commit -m 'logic updated, taking code backup' && git push -u o main",
-		"deploy": "npm run build && npm publish"
-	},
-	"repository": {
-		"type": "git",
-		"url": "git+ssh://git@github.com/zaions/express-tool-kit.git"
-	},
-	"keywords": [
-		"zaions",
-		"tools",
-		"kit",
-		"tool kit",
-		"util",
-		"helpers",
-		"constants",
-		"functions",
-		"server",
-		"client",
-		"nodejs",
-		"typescript",
-		"types",
-		"tests",
-		"aoneahsan",
-		"ahsan mahmood",
-		"zaions packages",
-		"express"
-	],
-	"author": {
-		"name": "Zaions",
-		"email": "admin@zaions.com",
-		"url": "https://zaions.com/bio"
-	},
-	"license": "ISC",
-	"bugs": {
-		"url": "https://github.com/zaions/express-tool-kit/issues"
-	},
-	"homepage": "https://github.com/zaions/express-tool-kit#readme",
-	"engines": {
-		"node": ">=20.14.0",
-		"npm": ">=10.7.0",
-		"yarn": ">=1.22.19"
-	},
-	"peerDependencies": {
-		"cors": "^2.8.5",
-		"express": "^4.21.0 | ^5.0.0",
-		"express-rate-limit": "^7.4.0",
-		"zaions-tool-kit": "^0.0.40",
-		"zod": "^3.23.8"
-	},
-	"devDependencies": {
-		"@types/cors": "^2.8.17",
-		"@types/express": "^4.17.21",
-		"@types/node": "^22.5.5",
-		"cors": "^2.8.5",
-		"express": "^5.0.0",
-		"express-rate-limit": "^7.4.0",
-		"ts-node": "^10.9.2",
-		"tsup": "^8.2.4",
-		"typescript": "^5.6.2",
-		"vitest": "^2.1.1",
-		"zaions-tool-kit": "^0.0.40",
-		"zod": "^3.23.8"
-	},
-	"contributors": [
-		{
-			"name": "Ahsan Mahmood",
-			"email": "aoneahsan@gmail.com",
-			"url": "https://aoneahsan.com"
-		}
-	],
-	"displayName": "Zaions - Express Tool Kit",
-	"engineStrict": true,
-	"funding": {
-		"type": "individual",
-		"url": "https://www.patreon.com/zaions"
-	},
-	"private": false,
-	"pricing": "Free"
+  "name": "zaions-express-tool-kit",
+  "version": "0.0.23",
+  "description": "Zaions Express Tool Kit, this is for expressJs/Typescript projects created by Zaions Dev Team (https://zaions.com), We hope you will love this and all other packages we have developed for you, please do react out if you face any issue in packages we deliver. Once again have fun while working with these packages and let us know your feedback, it keeps us motivated. Have a great day :)",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "npm run update:linked-packages && tsup --watch",
+    "build": "npm run unlink-packages && tsup",
+    "build:with-linked-packages": "npm run update:linked-packages && tsup",
+    "test": "npm run update:linked-packages && vitest",
+    "update:linked-packages": "yarn install --force && yarn link zaions-tool-kit",
+    "unlink-packages": "yarn unlink zaions-tool-kit && yarn install --force",
+    "push:code": "git add . && git commit -m 'logic updated, taking code backup' && git push -u o main",
+    "deploy": "npm run build && npm publish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/zaions/express-tool-kit.git"
+  },
+  "keywords": [
+    "zaions",
+    "tools",
+    "kit",
+    "tool kit",
+    "util",
+    "helpers",
+    "constants",
+    "functions",
+    "server",
+    "client",
+    "nodejs",
+    "typescript",
+    "types",
+    "tests",
+    "aoneahsan",
+    "ahsan mahmood",
+    "zaions packages",
+    "express"
+  ],
+  "author": {
+    "name": "Zaions",
+    "email": "admin@zaions.com",
+    "url": "https://zaions.com/bio"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zaions/express-tool-kit/issues"
+  },
+  "homepage": "https://github.com/zaions/express-tool-kit#readme",
+  "engines": {
+    "node": ">=20.14.0",
+    "npm": ">=10.7.0",
+    "yarn": ">=1.22.19"
+  },
+  "peerDependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.0 | ^5.0.0",
+    "express-rate-limit": "^7.4.0",
+    "zaions-tool-kit": "^0.0.57",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.7.4",
+    "cors": "^2.8.5",
+    "express": "^5.0.0",
+    "express-rate-limit": "^7.4.0",
+    "ts-node": "^10.9.2",
+    "tsup": "^8.3.0",
+    "typescript": "^5.6.2",
+    "vitest": "^2.1.2",
+    "zaions-tool-kit": "^0.0.58",
+    "zod": "^3.23.8"
+  },
+  "contributors": [
+    {
+      "name": "Ahsan Mahmood",
+      "email": "aoneahsan@gmail.com",
+      "url": "https://aoneahsan.com"
+    }
+  ],
+  "displayName": "Zaions - Express Tool Kit",
+  "engineStrict": true,
+  "funding": {
+    "type": "individual",
+    "url": "https://www.patreon.com/zaions"
+  },
+  "private": false,
+  "pricing": "Free"
 }
