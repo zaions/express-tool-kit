@@ -550,10 +550,10 @@
   dependencies:
     undici-types "~5.26.4"
 
-"@types/node@^22.7.4":
-  version "22.7.4"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-22.7.4.tgz#e35d6f48dca3255ce44256ddc05dee1c23353fcc"
-  integrity sha512-y+NPi1rFzDs1NdQHHToqeiX2TIS79SWEAw9GYhkkx8bD0ChpfqC+n2j5OXOCpzfojBEBt6DnEnnG9MY0zk1XLg==
+"@types/node@^22.7.5":
+  version "22.7.5"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-22.7.5.tgz#cfde981727a7ab3611a481510b473ae54442b92b"
+  integrity sha512-jML7s2NAzMWc//QSJ1a3prpk78cOPchGvXJsC3C6R6PSMoooztvRVQEz89gmBTBY1SPMaqo5teB4uNHPdetShQ==
   dependencies:
     undici-types "~6.19.2"
 
@@ -857,10 +857,10 @@ cookie-signature@^1.2.1:
   resolved "https://registry.yarnpkg.com/cookie-signature/-/cookie-signature-1.2.1.tgz#790dea2cce64638c7ae04d9fabed193bd7ccf3b4"
   integrity sha512-78KWk9T26NhzXtuL26cIJ8/qNHANyJ/ZYrmEXFzUmhZdjpBv+DlWlOANRTGBt48YcyslsLrj0bMLFTmXvLRCOw==
 
-cookie@0.6.0:
-  version "0.6.0"
-  resolved "https://registry.yarnpkg.com/cookie/-/cookie-0.6.0.tgz#2798b04b071b0ecbff0dbb62a505a8efa4e19051"
-  integrity sha512-U71cyTamuh1CRNCfpGY6to28lxvNwPG4Guz/EVjgf3Jmzv0vlDp1atT9eS5dDjMYHucpHbWns6Lwf3BKz6svdw==
+cookie@0.7.1:
+  version "0.7.1"
+  resolved "https://registry.yarnpkg.com/cookie/-/cookie-0.7.1.tgz#2f73c42142d5d5cf71310a74fc4ae61670e5dbc9"
+  integrity sha512-6DnInpx7SJ2AK3+CTUE/ZM0vWTUboZCegxhC2xiIydHR9jNuTAASBrfEpHhiGOZw/nX51bHt6YQl8jsGo4y/0w==
 
 cors@^2.8.5:
   version "2.8.5"
@@ -1081,21 +1081,21 @@ execa@^5.1.1:
     signal-exit "^3.0.3"
     strip-final-newline "^2.0.0"
 
-express-rate-limit@^7.4.0:
-  version "7.4.0"
-  resolved "https://registry.yarnpkg.com/express-rate-limit/-/express-rate-limit-7.4.0.tgz#5db412b8de83fa07ddb40f610c585ac8c1dab988"
-  integrity sha512-v1204w3cXu5gCDmAvgvzI6qjzZzoMWKnyVDk3ACgfswTQLYiGen+r8w0VnXnGMmzEN/g8fwIQ4JrFFd4ZP6ssg==
+express-rate-limit@^7.4.1:
+  version "7.4.1"
+  resolved "https://registry.yarnpkg.com/express-rate-limit/-/express-rate-limit-7.4.1.tgz#90954ecbcde9e7ae7b5000325395f86991191d94"
+  integrity sha512-KS3efpnpIDVIXopMc65EMbWbUht7qvTCdtCR2dD/IZmi9MIkopYESwyRqLgv8Pfu589+KqDqOdzJWW7AHoACeg==
 
-express@^5.0.0:
-  version "5.0.0"
-  resolved "https://registry.yarnpkg.com/express/-/express-5.0.0.tgz#744f9ec86025a01aeca99e4300aa4fc050d493c7"
-  integrity sha512-V4UkHQc+B7ldh1YC84HCXHwf60M4BOMvp9rkvTUWCK5apqDC1Esnbid4wm6nFyVuDy8XMfETsJw5lsIGBWyo0A==
+express@^5.0.1:
+  version "5.0.1"
+  resolved "https://registry.yarnpkg.com/express/-/express-5.0.1.tgz#5d359a2550655be33124ecbc7400cd38436457e9"
+  integrity sha512-ORF7g6qGnD+YtUG9yx4DFoqCShNMmUKiXuT5oWMHiOvt/4WFbHC6yCwQMTSBMno7AqntNCAzzcnnjowRkTL9eQ==
   dependencies:
     accepts "^2.0.0"
     body-parser "^2.0.1"
     content-disposition "^1.0.0"
     content-type "~1.0.4"
-    cookie "0.6.0"
+    cookie "0.7.1"
     cookie-signature "^1.2.1"
     debug "4.3.6"
     depd "2.0.0"
@@ -2035,10 +2035,10 @@ type-is@~1.6.18:
     media-typer "0.3.0"
     mime-types "~2.1.24"
 
-typescript@^5.6.2:
-  version "5.6.2"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-5.6.2.tgz#d1de67b6bef77c41823f822df8f0b3bcff60a5a0"
-  integrity sha512-NW8ByodCSNCwZeghjN3o+JX5OFH0Ojg6sadjEKY4huZ52TqbJTJnDo5+Tw98lSy63NZvi4n+ez5m2u5d4PkZyw==
+typescript@^5.6.3:
+  version "5.6.3"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-5.6.3.tgz#5f3449e31c9d94febb17de03cc081dd56d81db5b"
+  integrity sha512-hjcS1mhfuyi4WW8IWtjP7brDrG2cuDZukyrYrSauoXGNgx0S7zceP07adYkJycEr56BOUTNPzbInooiN3fn1qw==
 
 undici-types@~5.26.4:
   version "5.26.5"
@@ -2173,10 +2173,10 @@ yn@3.1.1:
   resolved "https://registry.yarnpkg.com/yn/-/yn-3.1.1.tgz#1e87401a09d767c1d5eab26a6e4c185182d2eb50"
   integrity sha512-Ux4ygGWsu2c7isFWe8Yu1YluJmqVhxqK2cLXNQA5AcC3QfbGNpM7fu0Y8b/z16pXLnFxZYvWhd3fhBY9DLmC6Q==
 
-zaions-tool-kit@^0.0.58:
-  version "0.0.58"
-  resolved "https://registry.yarnpkg.com/zaions-tool-kit/-/zaions-tool-kit-0.0.58.tgz#30a9db6fe6b6b911dedab786c2859cf2a128747a"
-  integrity sha512-1Nb3oTrpku5XV3DcjmwpC4G7dc0bQdVeNRbHPfw9fVOvzcmgBDfFLCTlFHGZjf51Yp5EmxZmLZh/Q1aEfAGtCg==
+zaions-tool-kit@^0.0.74:
+  version "0.0.74"
+  resolved "https://registry.yarnpkg.com/zaions-tool-kit/-/zaions-tool-kit-0.0.74.tgz#553a4de15c68cc392671e51824ccb9985dc14ca4"
+  integrity sha512-OlZVO8xqYgr8NaQlN1SIT8g9NCZ9T35SBfptw8oRRwo/Cj0RczBIXwptXqR6TfrFtARyN/BAWOk5daPqjTmoPg==
 
 zod@^3.23.8:
   version "3.23.8"
