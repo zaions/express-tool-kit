@@ -1,7 +1,7 @@
-export { IApplyMiddlewareOptions } from './middlewares';
-export {
-	IApiResponse,
-	IAuthCheckResultGeneric,
-	IConfigureZETKOptions,
-	IExpressRateLimiterOptions,
+export type {
+  IApiResponse,
+  IAuthCheckResultGeneric,
+  IConfigureZETKOptions,
+  IExpressRateLimiterOptions,
 } from './generic';
+export type { IApplyMiddlewareOptions } from './middlewares';
