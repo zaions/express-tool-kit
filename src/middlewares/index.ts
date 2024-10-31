@@ -65,7 +65,7 @@ export const applyMiddlewaresOnApp = (
 };
 
 export const invalidRequestHandler = (app: Express): void => {
-  app.use('*', (_: Request, res: Response) => {
+  app.use(/(.*)/, (_: Request, res: Response) => {
     sendApiFailedResponse(res, {
       code: ResponseCodeEnum.invalidRequest,
       status: ResponseStatusEnum.invalidRequest,

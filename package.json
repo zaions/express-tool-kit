@@ -1,6 +1,6 @@
 {
   "name": "zaions-express-tool-kit",
-  "version": "0.0.27",
+  "version": "0.0.28",
   "description": "Zaions Express Tool Kit, this is for expressJs/Typescript projects created by Zaions Dev Team (https://zaions.com), We hope you will love this and all other packages we have developed for you, please do react out if you face any issue in packages we deliver. Once again have fun while working with these packages and let us know your feedback, it keeps us motivated. Have a great day :)",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
@@ -69,7 +69,7 @@
     "@types/cors": "^2.8.17",
     "@types/crypto-js": "^4.2.2",
     "@types/express": "^5.0.0",
-    "@types/node": "^22.8.4",
+    "@types/node": "^22.8.5",
     "cors": "^2.8.5",
     "crypto-js": "^4.2.0",
     "dayjs": "^1.11.13",
