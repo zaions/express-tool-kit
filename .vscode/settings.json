@@ -22,7 +22,8 @@
   "peacock.color": "#007fff",
   "editor.codeActionsOnSave": {
     "source.sortImports": "explicit",
-    "source.fixAll": "explicit"
+    "source.fixAll": "explicit",
+    "source.removeUnusedImports": "explicit"
   },
   "prettier.enable": true,
   "editor.formatOnSave": true,

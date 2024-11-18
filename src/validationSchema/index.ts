@@ -1,4 +1,4 @@
 export {
-	loginRequestValidationSchema,
-	registerRequestValidationSchema,
+  loginRequestValidationSchema,
+  registerRequestValidationSchema,
 } from './auth';
