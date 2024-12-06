@@ -1,7 +1,6 @@
 export {
   getExpressRateLimiterOptions,
   isApiResponse,
-  numericEnum,
   sendApiFailedResponse,
   sendApiResponse,
   sendApiSuccessResponse,

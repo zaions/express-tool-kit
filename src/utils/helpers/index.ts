@@ -14,5 +14,4 @@ export {
   getExpressRateLimiterOptions,
   setExpressRateLimiterOptions,
 } from './middlewareHelpers';
-export { numericEnum } from './packagesHelpers';
 export { validateRequestInputData } from './validationHelpers';

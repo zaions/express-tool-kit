@@ -62,14 +62,14 @@
     "cors": "^2.8.5",
     "express": "^4.21.0 | ^5.0.1",
     "express-rate-limit": "^7.4.1",
-    "zaions-tool-kit": "^0.0.86",
+    "zaions-tool-kit": "^0.0.88",
     "zod": "^3.23.8"
   },
   "devDependencies": {
     "@types/cors": "^2.8.17",
     "@types/crypto-js": "^4.2.2",
     "@types/express": "^5.0.0",
-    "@types/node": "^22.8.5",
+    "@types/node": "^22.10.1",
     "cors": "^2.8.5",
     "crypto-js": "^4.2.0",
     "dayjs": "^1.11.13",
@@ -77,9 +77,9 @@
     "express-rate-limit": "^7.4.1",
     "ts-node": "^10.9.2",
     "tsup": "^8.3.5",
-    "typescript": "^5.6.3",
-    "vitest": "^2.1.4",
-    "zaions-tool-kit": "^0.0.86",
+    "typescript": "^5.7.2",
+    "vitest": "^2.1.8",
+    "zaions-tool-kit": "^0.0.88",
     "zod": "^3.23.8"
   },
   "contributors": [
