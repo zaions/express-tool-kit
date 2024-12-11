@@ -1,6 +1,6 @@
 import type { Response } from 'express';
 import type { Options } from 'express-rate-limit';
-import { PermissionEnum, RoleEnum } from 'zaions-tool-kit';
+import { FormFieldsEnum, PermissionEnum, RoleEnum } from 'zaions-tool-kit';
 
 export interface IExpressRateLimiterOptions extends Partial<Options> {}
 
@@ -21,4 +21,5 @@ export interface IAuthCheckResultGeneric<A, B> {
   userPhoneNumber: string;
   userRole: RoleEnum;
   userPermissions: PermissionEnum[];
+  [FormFieldsEnum.uniqueId]?: string;
 }
