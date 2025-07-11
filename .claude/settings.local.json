@@ -82,7 +82,10 @@
       "Bash(yarn tsc:*)",
       "Bash(npm audit:*)",
       "Bash(yarn audit)",
-      "Bash(yarn outdated)"
+      "Bash(yarn outdated)",
+      "Bash(npm test)",
+      "Bash(npx tsup:*)",
+      "Bash(npx vitest run:*)"
     ],
     "deny": []
   }

@@ -1,5 +1,5 @@
 import { sendApiFailedResponse } from '@helpers/apiHelpers';
-import { getExpressRateLimiterOptions } from '@helpers/middlewareHelpers';
+import { getExpressRateLimiterOptions, getExpressCorsOptions } from '@helpers/middlewareHelpers';
 import cors from 'cors';
 import type { Express, Request, Response } from 'express';
 import { json, urlencoded } from 'express';
@@ -16,11 +16,21 @@ const limiter = rateLimit({
   legacyHeaders: _rateLimiterOptions?.legacyHeaders ?? false, // Disable the `X-RateLimit-*` headers.
   // store: ... , // Redis, Memcached, etc. See below.
   keyGenerator: (req) => {
-    // Use the IP from the 'X-Forwarded-For' header or the remote address if not available
-    const ip = req.headers
-      ? req.headers['x-forwarded-for']
-      : req.socket.remoteAddress;
-    return ip ? ip.toString() : '';
+    // Improved IP detection with trust proxy support
+    // Priority: 1. req.ip (respects trust proxy), 2. x-forwarded-for, 3. socket address
+    let ip = req.ip;
+    
+    if (!ip && req.headers['x-forwarded-for']) {
+      // Get first IP from comma-separated list
+      const forwarded = req.headers['x-forwarded-for'];
+      ip = Array.isArray(forwarded) ? forwarded[0] : forwarded.split(',')[0]?.trim();
+    }
+    
+    if (!ip) {
+      ip = req.socket.remoteAddress;
+    }
+    
+    return ip || 'unknown';
   },
   handler: (_, res /*next*/) => {
     return res.status(429).json({
@@ -33,6 +43,7 @@ export const applyMiddlewaresOnApp = (
   expressApp: Express,
   {
     applyCors,
+    corsOptions,
     expressJson,
     expressUrlEncoded,
     applyRateLimiter = true,
@@ -48,11 +59,14 @@ export const applyMiddlewaresOnApp = (
   }
 
   if (applyCors) {
-    expressApp.use(
-      cors({
-        origin: '*',
-      })
-    );
+    const globalCorsOptions = getExpressCorsOptions();
+    const effectiveCorsOptions = corsOptions || globalCorsOptions || {
+      origin: process.env.CORS_ORIGIN || '*',
+      credentials: true,
+      methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH', 'OPTIONS'],
+      allowedHeaders: ['Content-Type', 'Authorization'],
+    };
+    expressApp.use(cors(effectiveCorsOptions));
   }
 
   if (expressUrlEncoded) {

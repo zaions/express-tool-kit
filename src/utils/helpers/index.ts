@@ -12,6 +12,8 @@ export {
 export { isApiResponse } from './genericHelpers';
 export {
   getExpressRateLimiterOptions,
+  getExpressCorsOptions,
   setExpressRateLimiterOptions,
+  setExpressCorsOptions,
 } from './middlewareHelpers';
 export { validateRequestInputData } from './validationHelpers';

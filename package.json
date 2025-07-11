@@ -1,7 +1,7 @@
 {
-  "name": "zaions-express-tool-kit",
-  "version": "0.0.34",
-  "description": "Zaions Express Tool Kit, this is for expressJs/Typescript projects created by Zaions Dev Team (https://zaions.com), We hope you will love this and all other packages we have developed for you, please do react out if you face any issue in packages we deliver. Once again have fun while working with these packages and let us know your feedback, it keeps us motivated. Have a great day :)",
+  "name": "express-buildkit",
+  "version": "1.0.0",
+  "description": "Express BuildKit - A comprehensive TypeScript utility library for Express.js applications. Provides standardized API response helpers, middleware management, validation utilities, and more. Built with love by Ahsan Mahmood.",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
@@ -21,10 +21,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/zaions/express-tool-kit.git"
+    "url": "git+ssh://git@github.com/aoneahsan/express-buildkit.git"
   },
   "keywords": [
-    "zaions",
+    "express-buildkit",
     "tools",
     "kit",
     "tool kit",
@@ -40,19 +40,19 @@
     "tests",
     "aoneahsan",
     "ahsan mahmood",
-    "zaions packages",
+    "express utilities",
     "express"
   ],
   "author": {
-    "name": "Zaions",
-    "email": "admin@zaions.com",
-    "url": "https://zaions.com/bio"
+    "name": "Ahsan Mahmood",
+    "email": "aoneahsan@gmail.com",
+    "url": "https://aoneahsan.com"
   },
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/zaions/express-tool-kit/issues"
+    "url": "https://github.com/aoneahsan/express-buildkit/issues"
   },
-  "homepage": "https://github.com/zaions/express-tool-kit#readme",
+  "homepage": "https://github.com/aoneahsan/express-buildkit#readme",
   "engines": {
     "node": ">=20.14.0",
     "npm": ">=10.7.0",
@@ -69,16 +69,16 @@
     "@types/cors": "^2.8.17",
     "@types/crypto-js": "^4.2.2",
     "@types/express": "^5.0.1",
-    "@types/node": "^22.14.1",
+    "@types/node": "^24.0.13",
     "cors": "^2.8.5",
     "crypto-js": "^4.2.0",
     "dayjs": "^1.11.13",
     "express": "^5.1.0",
     "express-rate-limit": "^7.5.0",
     "ts-node": "^10.9.2",
-    "tsup": "^8.4.0",
+    "tsup": "^8.5.0",
     "typescript": "^5.8.3",
-    "vitest": "^2.1.9",
+    "vitest": "^3.2.4",
     "zaions-tool-kit": "^0.0.115",
     "zod": "^3.24.3"
   },
@@ -89,11 +89,11 @@
       "url": "https://aoneahsan.com"
     }
   ],
-  "displayName": "Zaions - Express Tool Kit",
+  "displayName": "Express BuildKit",
   "engineStrict": true,
   "funding": {
     "type": "individual",
-    "url": "https://www.patreon.com/zaions"
+    "url": "https://github.com/sponsors/aoneahsan"
   },
   "private": false,
   "pricing": "Free"

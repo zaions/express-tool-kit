@@ -1,5 +1,6 @@
 export {
   getExpressRateLimiterOptions,
+  getExpressCorsOptions,
   isApiResponse,
   sendApiFailedResponse,
   sendApiResponse,
@@ -11,5 +12,6 @@ export {
   sendUnAuthenticatedErrorResponse,
   sendUnAuthorizedErrorResponse,
   setExpressRateLimiterOptions,
+  setExpressCorsOptions,
   validateRequestInputData,
 } from './helpers';

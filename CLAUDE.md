@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Overview
 
-This is the Zaions Express Tool Kit (zaions-express-tool-kit), a TypeScript-based npm package providing utilities and helpers for Express.js applications. It's part of the Zaions package ecosystem that includes zaions-tool-kit, zaions-react-tool-kit, and zaions-react-ui-kit.
+This is Express BuildKit (express-buildkit), a TypeScript-based npm package providing utilities and helpers for Express.js applications. It provides standardized API response helpers, middleware management, validation utilities, and more for building robust Express applications.
 
 ## Development Commands
 
@@ -45,7 +45,7 @@ The package exports utilities organized into several categories:
    - Integration with API response helpers for validation errors
 
 4. **Configuration** (`src/configure/`)
-   - `configureZETK()` - Global configuration function
+   - `configureExpressBuildKit()` - Global configuration function
    - Rate limiter options management
 
 ### Key Dependencies
@@ -77,6 +77,6 @@ The package exports utilities organized into several categories:
 
 3. All response helpers follow a consistent API response structure with success, message, result (data/dataList/authToken), errors, code, and status fields.
 
-4. The rate limiter is configurable globally through `configureZETK()` and can be customized per-application.
+4. The rate limiter is configurable globally through `configureExpressBuildKit()` and can be customized per-application.
 
 5. Validation helpers automatically format Zod errors into the standard API response format.

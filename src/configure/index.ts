@@ -1,10 +1,18 @@
-import { setExpressRateLimiterOptions } from '@helpers/middlewareHelpers';
-import { IConfigureZETKOptions } from '@zTypes/generic';
+import { setExpressRateLimiterOptions, setExpressCorsOptions } from '@helpers/middlewareHelpers';
+import { IConfigureZETKOptions, IConfigureExpressBuildKitOptions } from '@zTypes/generic';
 
 export const configureZETK = (options: IConfigureZETKOptions): void => {
-  const { rateLimiterOptions } = options;
+  configureExpressBuildKit(options);
+};
+
+export const configureExpressBuildKit = (options: IConfigureExpressBuildKitOptions): void => {
+  const { rateLimiterOptions, corsOptions } = options;
 
   if (rateLimiterOptions) {
     setExpressRateLimiterOptions(rateLimiterOptions);
+  }
+
+  if (corsOptions) {
+    setExpressCorsOptions(corsOptions);
   }
 };

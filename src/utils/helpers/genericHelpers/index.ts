@@ -1,7 +1,7 @@
 import type { Response } from 'express';
 
 export const isApiResponse = (value: any): value is Response => {
-  return (
+  return !!(
     value &&
     typeof value === 'object' &&
     'statusCode' in value &&
